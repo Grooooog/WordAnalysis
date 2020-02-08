@@ -10,6 +10,4 @@ int main()
 
 	wordanalysis test;
 	test.runTest(h);
-
-	std::cin.get();
 }
