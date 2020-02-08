@@ -9,11 +9,14 @@
 #include <iostream>
 #include <vector>
 
+
+//Main Class
 class wordanalysis
 {
 public:
-	wordanalysis() {}
-	~wordanalysis() {}
+	wordanalysis();
+	~wordanalysis();
+	wordanalysis(const wordanalysis &word);
 
 	std::vector<int> inspectLetters(std::string str);
 	void sortLetters(std::vector<int> vec);

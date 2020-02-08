@@ -4,7 +4,22 @@
 #include <string>
 #include <vector>
 
+//Constructors and Deconstructor
+wordanalysis::wordanalysis()
+{
+}
 
+wordanalysis::~wordanalysis()
+{
+}
+
+wordanalysis::wordanalysis(const wordanalysis &word)
+{
+}
+
+
+//Function that takes strings and assigns the number of each letter in the phrase to a vector
+//Goes hand in hand with the sort function
 std::vector<int> wordanalysis::inspectLetters(std::string str)
 {
 	std::vector<int> vec;
@@ -100,6 +115,7 @@ std::vector<int> wordanalysis::inspectLetters(std::string str)
 	return vec;
 }
 
+//The function where the number-alphabet correlation is sorted and printed
 void wordanalysis::sortLetters(std::vector<int> vec)
 {
 	std::vector<std::string> chars =
@@ -117,6 +133,7 @@ void wordanalysis::sortLetters(std::vector<int> vec)
 	std::cout << "}";
 }
 
+//Shortcut function
 void wordanalysis::runTest(std::string s)
 {
 	wordanalysis b;
